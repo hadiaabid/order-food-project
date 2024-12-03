@@ -1,0 +1,9 @@
+/*FOOTER*/
+.footer {
+    background-color: #131a22;
+    color: white;
+    height: 50px;
+    text-align: center;
+    font-size: 0.8rem;
+    padding-top: 10px;
+}

@@ -1,0 +1,10 @@
+Separated Styles of menu (navbar) in header.css file and link to each html file.
+
+updated css of header and make it responsive. 
+
+apply display:flex instead of paddings everywhere in header for better structure.
+
+adding dropdown to categories 
+
+adding dropdown to foods.
+

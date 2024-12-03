@@ -1,0 +1,122 @@
+/* CSS for navbar section */
+.box {
+  background-color: crimson;
+  height: 70px;
+  top: 50%;
+}
+
+.logo a {
+  display: block;
+}
+
+.logo a img {
+  width: 70px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu .menu-list {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+}
+
+.menu ul li {
+  font-weight: 500;
+}
+
+.menu ul li a {
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.fa-solid {
+  color: #eb9494;
+  margin-right: 1%;
+}
+
+.border {
+  border: 2px solid transparent;
+  padding: 1rem;
+}
+
+.border:hover {
+  background-color: #6246497a;
+}
+
+.dropdown {
+  display: none;
+  transition: all 0.3s ease;
+  width: 0px;
+  padding: 1rem;
+  list-style: none;
+  height: 200px;
+  overflow-y: scroll;
+  border-radius: 5px;
+  z-index: 10;
+}
+
+.menu-list li:hover .dropdown {
+  position: absolute;
+  background-color: #faf9f97a;
+  width: auto;
+  padding-inline: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-width: 200px;
+  
+}
+
+/* Corrected Custom Scrollbar */
+.menu-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.menu-list::-webkit-scrollbar-thumb {
+  background-color: #ff4757;
+  border-radius: 5px;
+}
+
+.menu-list::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+.menu-list ul li a:hover {
+  background-color: #ff4757;
+}
+
+.menu-list li:hover .dropdown ul li {
+  padding: 3px 20px;
+  border-radius: 0;
+  background: transparent;
+  transition: all 0.3s ease;
+  
+}
+
+@media screen and (max-width: 968px) {
+  .menu .menu-list {
+    gap: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .logo {
+    width: 80%;
+    float: none;
+    margin: 1% auto;
+  }
+
+  .menu ul {
+    text-align: center;
+  }
+}
